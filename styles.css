@@ -45,6 +45,20 @@
 			padding-left: 1%;
 			
         }	
+	.banner h1 {
+    color: white;	
+	 -webkit-text-stroke: 1px black; /* Contour noir (Safari, Chrome, Edge) */           
+    font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: bold; /* Optionnel : texte en gras */
+	 padding-top: 70px;	
+}
+.banner h2 {
+    color: white;	
+	 -webkit-text-stroke: 0.5px black; /* Contour noir (Safari, Chrome, Edge) */           
+   font-size: 1rem;
+	
+}
 		
  } 
       
