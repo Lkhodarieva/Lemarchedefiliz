@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le marché de Filiz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Réseaux sociaux -->
+    <div class="social-icons">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+<!-- Lien vers le fichier JavaScript -->
+    <script src="main.js"></script>
+   
+    <!-- Barre noire fixe en haut de la page -->
+    <div class="top-bar">
+        <div class="container">
+            <!-- Colonne 1 : Adresse -->
+            <div class="col adresse">
+                <span>370 Route de Launaguet, 31140 Launaguet</span>
+            </div>
+            <!-- Colonne 2 : Téléphone cliquable -->
+            <div class="col">
+                <a href="tel:0561216751">
+                    <i class="fas fa-phone-alt"></i> 05 61 21 67 51
+                </a>
+            </div>
+            <!-- Colonne 3 : Ouvert 7j/7 -->
+            <div class="col">
+                <strong>Ouvert 7j/7</strong>
+            </div>
+        </div>
+    </div>
+         
+    
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+	
+        <div class="container">
+		<!-- Barre noire fixe en haut de la page -->
+   
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse align-items-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-black" href="apropos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="epicerie.html">Épicerie</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="produits-frais.html">Produits Frais</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="boucherie.html">Boucherie</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="bazar.html">Bazar</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ <!-- Logo -->
+    <div class="logo">
+	<a href="index.html">
+        <img src="images/logo.jpg"  alt="Logo" >
+		</a>
+    </div>
+ 
+
+    <!-- Sections -->
+   
+	 
+  <div class="container py-5 hidden">
+        <h1 class="text-center mb-4">Contactez-nous</h1>
+        <p class="text-center mb-5">
+            Que vous soyez un particulier ou un professionnel, nous sommes là pour répondre à vos questions !<br>
+            N'hésitez pas à nous écrire à l'adresse suivante : <strong>contact@lemarchedefiliz.com</strong> ou à remplir le formulaire de contact ci-dessous.<br>
+            Notre équipe dévouée sera ravie de vous assister et s'engage à vous répondre dans les plus brefs délais.
+        </p>
+        <div class="row">
+            <!-- Colonne Informations -->
+            <div class="col-lg-4">
+                <div class="card  p-4 h-100">
+                    <h3 class="mb-4">Informations</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i><strong>Adresse :</strong><br> 370 route de Launaguet, 31140 Launaguet</p>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.526810221024!2d1.4385244154916277!3d43.650325979121026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea50c6db843ad%3A0x7c61a1272b22d9bc!2s370%20Route%20de%20Launaguet%2C%2031140%20Launaguet!5e0!3m2!1sfr!2sfr!4v1693481144238!5m2!1sfr!2sfr" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                        <div class="divider"></div>
+                        <p><i class="fas fa-clock"></i><strong>Horaires :</strong><br>
+                            Lun-Ven : 8h - 20h<br>
+                            Samedi : 9h - 19h<br>
+                            Dimanche : 9h - 20h
+                        </p>
+                        <div class="divider"></div>
+                        <p><i class="fas fa-phone"></i><strong>Téléphone : </strong><a href="tel:0561216751" class="text-decoration-none">05 61 21 67 51</a></p>
+                        <div class="divider"></div>
+                        <p><i class="fas fa-envelope"></i><strong>Email : </strong><a href="mailto:contact@marchedefiliz.com" class="text-decoration-none">contact@marchedefiliz.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonne Formulaire -->
+            <div class="col-lg-8">
+                <div class="card p-4 h-100">
+                    <h3 class="mb-4">Formulaire de contact</h3>
+                    <form id="contactForm" action="sendmail.php" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label">Vous êtes :</label>
+                            <div>
+                                <input type="radio" id="particulier" name="type_client" value="Particulier" checked>
+                                <label for="particulier">Particulier</label>
+                                <input type="radio" id="professionnel" name="type_client" value="Professionnel" class="ms-3">
+                                <label for="professionnel">Professionnel</label>
+                            </div>
+                        </div>
+                        <div class="mb-3" id="societeField" style="display: none;">
+                            <label for="societe" class="form-label">Nom de la société</label>
+                            <input type="text" id="societe" name="societe" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nom" class="form-label">Nom *</label>
+                            <input type="text" id="nom" name="nom" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sujet" class="form-label">Sujet *</label>
+                            <input type="text" id="sujet" name="sujet" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning gold w-100">Envoyer</button>
+                    </form>
+                    <div class="alert alert-success mt-3" id="successMessage">
+                        Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Afficher/masquer champ société
+        document.getElementById("professionnel").addEventListener("change", function () {
+            document.getElementById("societeField").style.display = "block";
+        });
+
+        document.getElementById("particulier").addEventListener("change", function () {
+            document.getElementById("societeField").style.display = "none";
+        });
+    </script>
+   
+
+   <footer class="bg-dark text-white pt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Informations (colonne réduite) -->
+            <div class="col-md-2">
+                <h5>Informations</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">FAQ</a></li>
+                    <li><a href="#" class="text-white">À propos</a></li>
+                    <li><a href="#" class="text-white">Mentions légales</a></li>
+                </ul>
+            </div>
+            <!-- Heures d'ouverture (colonne réduite) -->
+            <div class="col-md-2">
+                <h5>Heures d'ouverture</h5>
+                <p>Lun-Ven : 8h - 20h</p>
+                <p>Samedi : 9h - 19h</p>
+                <p>Dimanche : 9h - 20h</p>
+            </div>
+            <!-- Localisation + Contact (colonne élargie) -->
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Carte Google Maps -->
+                    <div class="col-md-6">
+                       
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.526810221024!2d1.4385244154916277!3d43.650325979121026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea50c6db843ad%3A0x7c61a1272b22d9bc!2s370%20Route%20de%20Launaguet%2C%2031140%20Launaguet!5e0!3m2!1sfr!2sfr!4v1693481144238!5m2!1sfr!2sfr" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <!-- Section Contact -->
+                    <div class="col-md-6">
+                        <h5>Contact</h5>
+                        <p>370 route de Launaguet, 31140 Launaguet</p>
+                        <p>Tél : 05 61 21 67 51</p>
+                        <p>Email : contact@lemarchedefiliz.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2024 Épicerie du Monde. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

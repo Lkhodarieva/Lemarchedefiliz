@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le marché de Filiz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Réseaux sociaux -->
+    <div class="social-icons">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+<!-- Lien vers le fichier JavaScript -->
+    <script src="main.js"></script>
+   
+    <!-- Barre noire fixe en haut de la page -->
+    <div class="top-bar">
+        <div class="container">
+            <!-- Colonne 1 : Adresse -->
+            <div class="col adresse">
+                <span>370 Route de Launaguet, 31140 Launaguet</span>
+            </div>
+            <!-- Colonne 2 : Téléphone cliquable -->
+            <div class="col">
+                <a href="tel:0561216751">
+                    <i class="fas fa-phone-alt"></i> 05 61 21 67 51
+                </a>
+            </div>
+            <!-- Colonne 3 : Ouvert 7j/7 -->
+            <div class="col">
+                <strong>Ouvert 7j/7</strong>
+            </div>
+        </div>
+    </div>
+         
+    
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+	
+        <div class="container">
+		<!-- Barre noire fixe en haut de la page -->
+   
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse align-items-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-black" href="apropos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="epicerie.html">Épicerie</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="produits-frais.html">Produits Frais</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="boucherie.html">Boucherie</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="bazar.html">Bazar</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ <!-- Logo -->
+    <div class="logo">
+	<a href="index.html">
+        <img src="images/logo.jpg"  alt="Logo" >
+		</a>
+    </div>
+ <!--<a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.jpg" alt="Logo" class="rounded-circle" width="70">
+                
+            </a>-->
+    <!-- Bannière principale -->
+    <header class="banner d-flex  justify-content-center text-center">
+        <div>
+            <h1 >Ouverture officielle : </br>  <!--class="text-white" -->
+            Dimanche 15 décembre</h1>  <!--class="text-white" -->
+            
+			<h2 class="text-white">Venez déguster nos produits exclusifs le jour de l'ouverture !</h1>
+			
+			    <!--<button class="btn btn-warning mt-3">Voir nos produits</button>-->
+        </div>
+    </header>
+
+    <!-- Sections -->
+    <main class="container mt-5">
+	 <!-- Compteur references
+        <section id="compteurReferences" class="py-5 hidden text-center">
+            
+			<div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card">
+                       
+                        <div class="card-body text-center">
+                            <p>+3000 produits uniques</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                       
+                        <div class="card-body text-center">
+                            <p>+40 cuisines du monde représentées</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                       
+                        <div class="card-body text-center">
+                            <p>+20 producteurs locaux </p>
+                        </div>
+                    </div>
+                </div>
+				
+               
+            </div>
+           
+		  
+        </section> -->
+		
+	 <!-- Catégories principales -->
+        <section id="references" class="hidden">
+            <h2 class="text-center mb-4">Nos rayons</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card">
+					<a class="card-title" href="index.html">                           
+                        <img src="images/boucherie.jpg" class="card-img-top" alt="Boucherie">
+                        <div class="card-body text-center">						
+                            <h5 class="card-title">Boucherie</h5> 
+<p class="card-text">Viandes de qualité supérieure provenant de producteurs locaux.</p>							
+                        </div>
+						</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+					<a class="card-title" href="index.html">
+                        <img src="images/legumes.jpg" class="card-img-top" alt="Produits Frais">
+                        <div class="card-body text-center">                       
+                            
+							<h5 class="card-title">Fruits et légumes</h5>
+							<p class="card-text">Découvrez des fruits et légumes chaque jour frais, locaux et exotiques.</p>
+                        </div>
+						</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+					<a class="card-title" href="index.html">  
+                        <img src="images/cremerie.jpg" class="card-img-top" alt="Crémerie">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Crémerie</h5>
+							<p class="card-text">Retrouvez des produits laitiers d’exception : fromages artisanaux locaux et spécialités du monde</p>
+							                           
+                        </div>
+						</a>
+                    </div>
+                </div>
+				
+                <div class="col-md-3">
+                    <div class="card">
+					<a class="card-title" href="index.html">
+                        <img src="images/surgeles.jpg" class="card-img-top" alt="Bazar">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Surgelés</h5>
+                            <p class="card-text"> Les fruits et légumes, viandes, poissons, plats préparés et spécialités internationales</p>
+							
+                        </div>
+						</a>
+                    </div>
+                </div>
+            </div>
+			</br>
+			 <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card">
+					<a class="card-title" href="index.html">
+                        <img src="images/epicerie.jpg" class="card-img-top" alt="Boucherie">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Epicerie salé</h5>
+							<p class="card-text"> Explorez un large choix de produits locaux de qualité et trésors culinaires du monde entier</p>
+							
+                                                   </div>
+						</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+					<a class="card-title" href="index.html">
+                        <img src="images/patisserie.jpg" class="card-img-top" alt="Produits Frais">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Epicerie sucré</h5>
+							<p class="card-text">Des spécialités du monde fraîches et gourmandes pour un plaisir sucré à chaque bouchée.</p>
+							
+                            
+                        </div>
+						</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+					<a class="card-title" href="index.html">
+                        <img src="images/hygiene.jpg" class="card-img-top" alt="Épicerie">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Produit hygiène</h5>
+							<p class="card-text">Prenez soin de vous avec des produits respectueux et de qualité</p>
+							                          
+                        </div>
+						</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+					<a class="card-title" href="index.html">
+                        <img src="images/bazar.jpg" class="card-img-top" alt="Bazar">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bazar</h5>
+                            <p class="card-text">Un rayon pratique et diversifié pour tout trouver : ustensiles, déco, accessoires</p>
+							 
+                        </div>
+						</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Nos valeurs -->
+        <section id="about" class="py-5 hidden">
+		<h2 class="text-center mb-4">Nos valeurs et engagements</h2>
+            <div class="row align-items-center">
+			
+                <div class="col-md-4">
+                    <img src="images/valeurs2.jpg" class="img-fluid rounded" alt="Nos valeurs">
+                </div>
+                <div class="col-md-8">
+                  <h3></h3>
+        <h5> - Favoriser les produits bio et locaux</h5>
+        <p>Nous collaborons étroitement avec des partenaires de confiance pour vous proposer des fruits, légumes, produits laitiers, viandes et autres spécialités issus de l’agriculture biologique et locale.</p>
+        
+        <h5> - Promouvoir la diversité culinaire</h5>
+        <p>Nous importons des produits soigneusement sélectionnés, représentant le meilleur de chaque pays.Vous trouverez ici des saveurs qui vous feront voyager.</p>
+        
+        <h5> - Soutenir des pratiques éthiques et respectueuses de l’environnement</h5>
+        <p>Nous privilégions des fournisseurs qui partagent notre vision d’une production respectueuse de la planète. Nos produits sont sélectionnés pour leur qualité, mais aussi pour leur impact réduit sur l’environnement.</p>
+        
+        <h5> - Garantir une alimentation de qualité</h5>
+        <p>Votre bien-être est notre priorité. Nous nous engageons à offrir des produits sains, frais et exempts de substances nocives.</p>
+                
+				</div>
+            </div>
+        </section>
+
+       
+
+        <!-- Logos des partenaires -->
+        <section id="logos" class="py-5 hidden text-center">
+            <h2>Nos partenaires locaux</h2>
+            <div class="d-flex justify-content-center gap-4">
+                <img src="images/logoP1.jpg" alt="Logo partenaire" width="200">
+                <img src="images/logoP2.jpg" alt="Logo partenaire" width="100">
+                <img src="images/logoP3.jpg" alt="Logo partenaire" width="100">
+				 <img src="images/logoP4.jpg" alt="Logo partenaire" width="100">
+				  <img src="images/logoP5.jpg" alt="Logo partenaire" width="100">
+				   <img src="images/logoP6.jpg" alt="Logo partenaire" width="100">
+				    <img src="images/logoP7.jpg" alt="Logo partenaire" width="100">
+            </div>
+        </section>
+
+ <!-- Venez visiter notre magasin -->
+        <section id="logos" class="py-5 hidden text-center">
+            <h2>Venez visiter notre magasin</h2>
+            <div class="d-flex justify-content-center gap-4">
+                <img src="images/store.jpg" alt="Visite magasin" >
+                
+            </div>
+        </section>
+        <!-- Vente particuliers et grossistes
+        <section id="vente" class="py-5 vente d-flex align-items-center justify-content-center text-center">
+		<img src="images/grossistes.jpg" alt="Vente particuliers et grossistes" >
+            <h2>Vente pour particuliers et grossistes</h2><br/>
+            <p>Nous proposons des offres adaptées pour particuliers et professionnels. Contactez-nous pour plus de détails !</p>
+        
+		</section>
+		-->
+    </main>
+
+   <footer class="bg-dark text-white pt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Informations (colonne réduite) -->
+            <div class="col-md-2">
+                <h5>Informations</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">FAQ</a></li>
+                    <li><a href="#" class="text-white">À propos</a></li>
+                    <li><a href="#" class="text-white">Mentions légales</a></li>
+                </ul>
+            </div>
+            <!-- Heures d'ouverture (colonne réduite) -->
+            <div class="col-md-2">
+                <h5>Heures d'ouverture</h5>
+                <p>Lun-Ven : 8h - 20h</p>
+                <p>Samedi : 9h - 19h</p>
+                <p>Dimanche : 9h - 20h</p>
+            </div>
+            <!-- Localisation + Contact (colonne élargie) -->
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Carte Google Maps -->
+                    <div class="col-md-6">
+                       
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.526810221024!2d1.4385244154916277!3d43.650325979121026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea50c6db843ad%3A0x7c61a1272b22d9bc!2s370%20Route%20de%20Launaguet%2C%2031140%20Launaguet!5e0!3m2!1sfr!2sfr!4v1693481144238!5m2!1sfr!2sfr" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <!-- Section Contact -->
+                    <div class="col-md-6">
+                        <h5>Contact</h5>
+                        <p>370 route de Launaguet, 31140 Launaguet</p>
+                        <p>Tél : 05 61 21 67 51</p>
+                        <p>Email : contact@lemarchedefiliz.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2024 Épicerie du Monde. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

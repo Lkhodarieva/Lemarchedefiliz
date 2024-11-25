@@ -1,0 +1,369 @@
+/* Réseaux sociaux */
+.social-icons {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.social-icons a {
+    display: block;
+    margin: 10px 0;
+    color: black;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ca9420;
+	
+}
+		/* Appareils de taille smarphone (smartphone, 768px et plus) */
+@media (max-width: 768px) { 
+ /* Logo */
+ .logo img{
+           width: 60px; /* Réduit la taille du logo */
+                height: auto;
+				position: fixed;
+            top: 35px; /* Positionne le logo au milieu de la barre de menu */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1100;
+			border-radius: 50%; /* Si votre logo est rond */
+			 padding: 5px; /* Optionnel : espace autour du logo */
+
+        }			  
+        
+		 .top-bar .container {
+            display: flex;            
+			
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+			 font-size: 12px;
+			padding-left: 1%;
+			
+        }	
+		
+ } 
+      
+		/* Appareils de taille moyenne (tablettes, 768px et plus) */
+@media (min-width: 768px) { 
+ /* Logo */
+ .logo img{
+           width: 60px; /* Réduit la taille du logo */
+                height: auto;
+				position: fixed;
+            top: 35px; /* Positionne le logo au milieu de la barre de menu */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1100;
+			border-radius: 50%; /* Si votre logo est rond */
+ padding: 5px; /* Optionnel : espace autour du logo */
+        }
+		 .top-bar .container {
+            display: flex;            
+			
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+			padding-left: 10%;
+			
+        }
+ }
+/* Appareils assez larges (ordinateurs, 992px et plus)*/
+
+@media (min-width: 992px) { 
+.logo img{
+	 width: 130px; /* Réduit la taille du logo */
+                height: auto;
+            position: fixed;
+            top: 10px; /* Position ajustée pour qu'il soit devant les barres */
+            left: 5%;
+            z-index: 1100; /* Plus grand que celui des barres */
+            background-color: #fff; /* Optionnel : un fond blanc autour du logo */
+            padding: 5px; /* Optionnel : espace autour du logo */
+            border-radius: 50%; /* Si votre logo est rond */
+
+        }
+		 .top-bar .container {
+            display: flex;            
+			
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+			padding-left: 10%;
+			
+        }
+ }
+/* Barre noire fixe */
+        .top-bar {
+            background-color: #000; /* Fond noir */
+            color: white; /* Texte blanc */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+			 white-space: nowrap; /* Empêche le texte de descendre sur plusieurs lignes */
+            
+        }
+
+       
+
+        .top-bar .col {
+            text-align: center;
+            margin: 5px 0;
+        }
+		 
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .top-bar a:hover {
+            color: #ca9420; /* Couleur or au survol */
+        }
+
+
+/* Espacement pour que le contenu ne soit pas masqué par la barre */
+        body {
+            padding-top: 90px;
+        }
+		
+/* Bannière principale */
+.banner {
+	
+	padding-top: 90px;
+    height: 85vh;
+    background: url('images/banner25.jpg') center/cover no-repeat;
+}
+
+.banner h1 {
+    color: white;	
+	 -webkit-text-stroke: 2px black; /* Contour noir (Safari, Chrome, Edge) */           
+    font-size: 4rem;
+	text-transform: uppercase;
+	font-weight: bold; /* Optionnel : texte en gras */
+	 padding-top: 70px;	
+}
+.banner h2 {
+    color: white;	
+	 -webkit-text-stroke: 1.5px black; /* Contour noir (Safari, Chrome, Edge) */           
+   font-size: 2rem;
+	
+}
+
+.banner button {
+    background: #ca9420;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+/* Barre de navigation en bas de la barre noire */
+       /*  .navbar {
+            background-color: white;
+            position: fixed;
+			top: 40px; /* Ajusté pour ne pas chevaucher la barre noire */
+           /* 
+            width: 100%;
+            z-index: 999;
+        }*/
+		.navbar {
+            background-color: #fff;
+            position: fixed;
+            top: 35px; /* Ajusté pour ne pas chevaucher la barre noire */
+            left: 0;
+            width: 100%;
+            z-index: 900;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+		.nav-link {
+            color: black;
+            font-size: 20px;
+			font-weight: bold;
+			padding: 20px;
+          
+        }	
+		
+		
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+    color: #ca9420 !important;
+	font-weight: bold; /* Optionnel : texte en gras */
+}
+/* Vente grossiste */
+.vente {
+    height: 70vh;
+    background: url('images/VenteGrossiste.jpg') center/cover no-repeat;
+	
+}
+
+.vente h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+/* Animation pour une transition douce */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Classe pour initialiser l'état invisible */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Classe pour rendre visible avec animation */
+.show {
+    visibility: visible;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+
+.card-title
+{
+    text-decoration:none;
+	padding:3px;
+    
+}
+ /* Contrôle des tailles d'image */
+        .card-img-top {
+            width: 100%; /* Adapte à la largeur de la carte */
+            height: 200px; /* Hauteur fixe */
+            object-fit: cover; /* Coupe ou ajuste l'image pour remplir la zone */
+        }
+
+        /* Uniformité des cartes */
+        .card {
+            height: 100%; /* Permet aux cartes d'avoir la même hauteur */
+        }
+
+        .card-body {
+			padding: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Aligne le contenu */
+        }
+		.card-text{
+			font-size: 0.8rem;
+        }
+		
+/* page contact */
+ .card {
+           
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+.contact-info p {
+            margin-bottom: 10;
+            font-size: 1rem;
+        }
+
+        .contact-info i {
+            color: #ca9420;
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+
+        .divider {
+            border-top: 1px solid #e0e0e0;
+            margin: 10px 0;
+        }
+
+        .form-control:focus {
+            border-color: #ca9420;
+            box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+        }
+
+        .alert-success {
+            display: none;
+        }
+		.card button
+		{
+             background: #ca9420;
+		}
+		
+
+ /* Style de base pour les sections produits*/
+        .section-custom {
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            padding: 10px 10px 10px 10px;
+	 overflow: hidden; /* Empêche l'image de déborder en dehors du cadre */
+	 
+        }
+
+        .section-custom .text {
+            font-size: 1.2rem;
+            line-height: 1.2;
+			text-align: justify;
+			
+        }
+
+        .section-custom img {
+              height: 300px;
+            margin-left: 20px;
+			margin-right: 10px;
+           width: 400px;
+		  
+            top: 10px; /* Décalage de l'image pour l'émerger dans le texte */
+            float: right; /* Image flottante à droite */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .section-custom.left img {
+            float: left; /* Image flottante à gauche pour la section "Conserve" */
+            margin-left: 0;
+            margin-right: 20px;
+        }
+
+        /* Style des titres */
+        .section-custom h2 {
+            font-size: 2.0rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+  .about-us img {
+            
+            margin-left: 20px;
+			margin-right: 10px;
+           width: 400px;
+		  
+            top: 10px; /* Décalage de l'image pour l'émerger dans le texte */
+            float: right; /* Image flottante à droite */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        }
+		.about-us {
+            
+            text-align: justify;
+        }
+		.about-us h2{
+            
+            text-align: center;
+        }
